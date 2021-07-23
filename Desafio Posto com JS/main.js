@@ -11,9 +11,6 @@ function calcular() {
             }
             abastecer() {
                 let tipo = document.querySelector('input[name=comb]:checked').value;
-                let gas = document.querySelector('input[id=gasolina]').value;
-                let alc = document.querySelector('input[id=alcool]').value;
-
                 if (tipo == 'gas') {
                     var comb = this.gasolina;
                     var tipoComb = 'gasolina';
@@ -31,9 +28,6 @@ function calcular() {
             }
             pagamento() {
                 let tipo = document.querySelector('input[name=formapag]:checked').value;
-                let cartao = document.querySelector('input[id=cartao]').value;
-                let dinheiro = document.querySelector('input[id=dinheiro]').value;
-
                 if (tipo == 'cartao') {
                     var pag = 'Cartão';
                 } else if (tipo == 'dinheiro') {
